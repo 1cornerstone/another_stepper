@@ -75,22 +75,12 @@ class VerticalStepperItem extends StatelessWidget {
             width: barWidth,
             height: gap,
           ),
-          index <= activeIndex
-              ? item.trailing ??
+          item.trailing ??
                   StepperDot(
                     index: index,
                     totalLength: totalLength,
                     activeIndex: activeIndex,
-                  )
-              : ColorFiltered(
-                  colorFilter: Utils.getGreyScaleColorFilter(),
-                  child: item.trailing ??
-                      StepperDot(
-                        index: index,
-                        totalLength: totalLength,
-                        activeIndex: activeIndex,
-                      ),
-                ),
+                  ),
           Container(
             color: index == totalLength - 1
                 ? Colors.transparent
