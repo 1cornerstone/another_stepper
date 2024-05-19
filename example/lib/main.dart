@@ -15,20 +15,21 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   List<StepperData> stepperData = [
     const StepperData(
-      title: "Order Placed",
-      subtitle: "Your order has been placed",
+      title: Text("Order Placed"),
+      subtitle: Text("Your order has been placed"),
+      trailing: Icon(Icons.add)
     ),
     const StepperData(
-      title: "Preparing",
-      subtitle: "Your order is being prepared",
+      title: Text("Preparing"),
+      subtitle: Text("Your order is being prepared"),
     ),
     const StepperData(
-      title: "On the way",
-      subtitle: "Our delivery executive is on the way to deliver your item",
+      title: Text("On the way"),
+      subtitle: Text("Our delivery executive is on the way to deliver your item"),
     ),
     const StepperData(
-      title: "Delivered",
-      subtitle: "Your order was delivered successfully",
+      title: Text("Delivered"),
+      subtitle: Text("Your order was delivered successfully"),
     ),
   ];
 
