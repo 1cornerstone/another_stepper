@@ -75,7 +75,7 @@ class VerticalStepperItem extends StatelessWidget {
             width: barWidth,
             height: gap,
           ),
-          item.trailing ??
+          item.iconWidget ??
                   StepperDot(
                     index: index,
                     totalLength: totalLength,
