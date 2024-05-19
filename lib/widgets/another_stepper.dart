@@ -121,7 +121,7 @@ class AnotherStepper extends StatelessWidget {
         activeBarColor:
             inActiveBarColor ?? Theme.of(context).colorScheme.primary,
         barWidth: barThickness,
-        dotWidget: dotWidget,
+        // dotWidget: dotWidget,
         titleTextStyle: titleTextStyle,
         subtitleTextStyle: subtitleTextStyle,
       );

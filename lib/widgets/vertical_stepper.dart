@@ -16,7 +16,7 @@ class VerticalStepperItem extends StatelessWidget {
       required this.activeBarColor,
       required this.inActiveBarColor,
       required this.barWidth,
-      required this.dotWidget,
+      // required this.dotWidget,
       required this.titleTextStyle,
       required this.subtitleTextStyle})
       : super(key: key);
@@ -49,7 +49,7 @@ class VerticalStepperItem extends StatelessWidget {
   final double barWidth;
 
   /// [Widget] for dot/point
-  final Widget? dotWidget;
+  // final Widget? dotWidget;
 
   /// [TextStyle] for title
   final TextStyle titleTextStyle;
@@ -76,7 +76,7 @@ class VerticalStepperItem extends StatelessWidget {
             height: gap,
           ),
           index <= activeIndex
-              ? dotWidget ??
+              ? item.trailing ??
                   StepperDot(
                     index: index,
                     totalLength: totalLength,
@@ -84,7 +84,7 @@ class VerticalStepperItem extends StatelessWidget {
                   )
               : ColorFiltered(
                   colorFilter: Utils.getGreyScaleColorFilter(),
-                  child: dotWidget ??
+                  child: item.trailing ??
                       StepperDot(
                         index: index,
                         totalLength: totalLength,

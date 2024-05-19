@@ -5,6 +5,7 @@ class StepperData {
   final Widget? title;
   final Widget? subtitle;
   final Widget? trailing;
+  final Widget? iconWidget;
 
-  const StepperData({this.title, this.subtitle, this.trailing,});
+  const StepperData({this.iconWidget, this.title, this.subtitle, this.trailing,});
 }
